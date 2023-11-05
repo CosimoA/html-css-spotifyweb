@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive-layout</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="row">
+        <!-- SIDEBAR -->
+        <div id="sidebar">
+            <div id="logo" class="col">
+                <img src="img/logo.svg" alt="Logo">
+            </div>
+            <div id="sections">
+                <div id="home" class="flex-vc">
+                    <img src="img/home.svg" alt="home">
+                    <h4><a href="#">Home</a></h4>
+                    <div id="pillola-verticale"></div>
+                </div>
+                <div id="serch" class="flex-vc">
+                    <img src="img/search.svg" alt="search">
+                    <h4><a href="#">Cerca</a></h4>
+                </div>
+                <div id="my-library" class="flex-vc">
+                    <img src="img/libreria.svg" alt="libreria">
+                    <h4><a href="#">La tua libreria</a></h4>
+                </div>
+            </div>
+            <div id="playlist" class="col">
+                <h3>PLAYLIST</h3>
+                <div id="add-playlist" class="flex-vc">
+                    <div id="plus-icon" class="flex-vc"><a href="#"><i class="fa-solid fa-plus" style="color: #000000;"></i></a></div> <h3>Crea Playlist</h3>
+                </div>
+                <div id="playlists-name">
+                    <ul>
+                        <li>
+                            <h4><a href="#">Nome Playlist</a></h4>
+                        </li>
+                        <li>
+                            <h4><a href="#">Nome Playlist</a></h4>
+                        </li>
+                        <li>
+                            <h4><a href="#">Nome Playlist</a></h4>
+                        </li>
+                        <li>
+                            <h4><a href="#">Nome Playlist</a></h4>
+                        </li>
+                        <li>
+                            <h4><a href="#">Nome Playlist</a></h4>
+                        </li>
+                        <li>
+                            <h4><a href="#">Nome Playlist</a></h4>
+                        </li>
+                        <li>
+                            <h4><a href="#">Nome Playlist</a></h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="sidebar-bottom">
+                <div id="install" class="flex-vc">
+                    <img src="img/download.svg" alt="download"> <h4><a href="#">Installa app</a></h4>
+                </div>
+                <div id="profile" class="flex-vc">
+                    <div id="profile-img"><img src="img/profile.svg" alt="profile"></div> <h3>John Doe</h3>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENT -->
+        <div id="content">
+            <div class="flex-vc" id="banner">
+                <div>
+                    <a class="button" href="#">EFFETTUA L'UPGRADE</a>
+                </div>
+            </div>
+            <div id="section-content" class="row">
+                <ul class="row">
+                    <li>
+                        <div id="pillola">
+                            <h3>
+                                <a href="#">IN EVIDENZA</a>
+                            </h3>
+                            <div id="pillola-orizzontale"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="#">PODCAST</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="#">CLASSIFICHE</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="#">GENERI E MOOD</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="#">NUOVE USCITE</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="#">SCOPRI</a>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+    <!-- CONTROLS -->
+    <div id="controls" class="flex-vc">
+        <div id="info-song" class="flex-vc">
+            <div id="cover" class="flex-vc">
+                <img src="img/sinister.jpeg" alt="sinister">
+                <div id="nome-brano">
+                    <h4>Sinister</h4>
+                    <h5>Brano Nome</h5>
+                </div>
+            </div>
+            <div>
+                <i class="fa-regular fa-heart"></i> <i class="fa-regular fa-folder"></i>
+            </div>
+        </div>
+        <div id="player-controls">
+            <div id="control-buttons" class="flex-vc">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i id="play-button" class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+            <div id="time-bar" class="flex-vc">
+                <div><h5>0:25</h5></div>
+                <div id="time-bar-big">
+                    <div id="time-bar-small"></div>
+                </div>
+                <div><h5>4:35</h5></div>
+            </div>
+
+
+        </div>
+        <div id="device-controls" class="flex-vc">
+            <i class="fa-solid fa-list"></i>
+            <i class="fa-solid fa-computer"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <div id="volume-bar-big">
+                <div id="volume-bar-small"></div>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>

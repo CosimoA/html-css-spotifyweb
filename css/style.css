@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color:#717171;
+}
+
+
+/*----------DEBUG----------*/
+
+
+
+/*----------DEBUG----------*/
+
+
+/*************************************************
+    GENERAL STYLES
+*************************************************/
+
+li{
+    list-style-type: none;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+i{
+    padding: 0 1rem;
+    font-size: 1.3rem;
+}
+
+#sections img{
+    height: 28px;
+    /* font-size: 28px; */
+    padding-right: 0.5rem;
+}
+
+h3, #time-bar h5{
+    color: white;
+}
+
+
+/*----------BACKGROUND COLORS----------*/
+
+#sidebar, #sidebar-bottom {
+    background-color: black;
+}
+
+#banner{
+    background-color: rgba(0, 0, 0, 0.400);
+}
+
+#content {
+    background-color: #141922;
+}
+
+#controls {
+    background-color: #282828;
+}
+
+#time-bar-big, #volume-bar-big{
+    background-color: #5a5a5a;
+}
+
+#plus-icon, #profile-img{
+    background-color: #a3a3a3;
+}
+
+#time-bar-small, #volume-bar-small{
+    background-color: #c1c1c1;
+}
+
+#pillola-verticale, #pillola-orizzontale{
+    background-color: #adff2f;
+}
+
+
+/*----------TXT COLORS----------*/
+
+#home a, #playlist h3, #info-song h4, #player-controls i{
+    color: white;
+}
+
+#device-controls i{
+    color: #c1c1c1;
+}
+
+#add-playlist h3{
+    color:#717171;
+}
+
+#install i{
+    color: black;
+}
+
+/*----------BUTTONS----------*/
+
+.button{
+    border-radius: 25px;
+    border: 1px solid white;
+    padding: 1rem 2rem;
+    color: white;
+    margin-right: 1rem;
+}
+
+#pillola-verticale{
+    height: 100%;
+    width: 4px;
+    position: absolute;
+    left: -1rem;
+}
+
+#pillola-orizzontale{
+    height: 4px;
+    width: 33%;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/************************************************
+    UTILITIES
+************************************************/
+
+/*----------LAYOUT----------*/
+
+main{
+    height: calc(100vh - 100px);
+}
+
+.row{
+    display: flex;
+}
+
+.col {
+    padding: 1rem 0;
+}
+
+.sub-col {
+    padding: 0.5rem 0;
+}
+
+.flex-vc{
+    display: flex;
+    align-items: center;
+}
+
+
+/*----------TEXT----------*/
+
+.txt-center{
+    text-align: center;
+}
+
+/*----------IMG----------*/
+
+.circle{
+    position: relative;
+}
+
+
+/************************************************
+    SITE SECTIONS
+************************************************/
+
+/* SIDEBAR */
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    width: 250px;
+    /* height: 100%; */
+    position: relative;
+    overflow-y: hidden;
+}
+
+#logo img{
+    width: 75%;
+}
+
+#sections div, #playlist div, #playlist h3, #playlist li, #install, #profile{
+    padding: 0.5rem 0;
+}
+
+/* sections */
+
+#home{
+    position: relative;
+}
+
+/* playlist */
+
+#plus-icon{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-right: 0.5rem;
+}
+
+#playlist{
+    flex-grow: 1;
+}
+
+#playlists-name{
+    /* overflow-y: auto; */
+}
+
+/* SIDEBAR-BOTTOM */
+
+#sidebar-bottom{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 218px;
+    
+}
+
+/* install */
+
+#install{
+    border-bottom: 1px solid #717171;
+}
+
+#install img{
+    height: 1.2rem;
+    padding-right: 0.5rem;
+}
+
+
+/* profile */
+
+#profile-img{
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    width: 28px;
+    height: 28px;
+
+}
+
+#profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+}
+
+
+#profile h3{
+    padding-left: 0.5rem;
+}
+
+
+
+/* CONTENT */
+
+#banner{
+    height: 100px;
+    position: fixed;
+    width: calc(100% - 250px);
+    top: 0;
+    z-index: 1;
+    justify-content: flex-end;
+}
+
+#content{
+    flex-grow: 1;
+    padding-top: 100px;
+    overflow-y: auto;
+}
+
+#pillola{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#section-content{
+    justify-content: center;
+}
+
+#section-content a{
+    display: inline-block;
+    padding: 1rem 1rem 0.5rem 1rem;
+
+}
+
+
+/* CONTROLS */
+
+#controls{
+    height: 100px;
+    z-index: 2;
+    justify-content: space-between;
+}
+
+#info-song{
+    width: 250px;
+    justify-content: space-between;
+}
+
+#info-song img{
+    width: 50px;
+    margin: 0 0.5rem;
+}
+
+#info-song i, #device-controls i{
+    padding: 0 0.4rem;
+}
+
+#play-button{
+    font-size: 2rem;
+}
+
+#control-buttons{
+justify-content: center;
+margin-bottom: 0.5rem;
+}
+
+#time-bar-big{
+    width: 20vw;
+    height: 4px;
+    margin: 0 1rem;
+    border-radius: 4px;
+}
+
+#time-bar-small{
+    width: 25%;
+    height: 4px;
+    border-radius: 4px;
+}
+
+#volume-bar-big{
+    width: 8vw;
+    height: 4px;
+    margin: 0 1rem;
+    border-radius: 4px;
+}
+
+#volume-bar-small{
+    width: 25%;
+    height: 4px;
+    border-radius: 4px;
+}
+
+#device-controls i{
+    font-size: 1rem;
+}
+
+
+/************************************************
+    RESPONSIVE
+************************************************/
+
+/* TABLET 768px */
+
+@media all and (min-width: 768px){
+    
+}
+
+/* Desktop 1200px */
+
+@media all and (min-width: 1200px){
+    
+}
