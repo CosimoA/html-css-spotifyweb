@@ -187,12 +187,17 @@ main{
 ************************************************/
 
 /* SIDEBAR */
-#sidebar{
+#sidebar-container{
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
+}
+
+#sidebar{
+    flex-grow: 1;
     padding: 0 1rem;
     width: 250px;
-    position: relative;
+    /* position: relative; */
     overflow-y: hidden;
 }
 
@@ -200,7 +205,7 @@ main{
     width: 75%;
 }
 
-#sections div, #playlist div, #playlist h3, #playlist li, #install, #profile{
+#sections div, #playlist div, #playlist h3, #playlists-name li, #install, #profile{
     padding: 0.5rem 0;
 }
 
@@ -221,21 +226,21 @@ main{
     margin-right: 0.5rem;
 }
 
-#playlist{
-    flex-grow: 1;
-}
-
 #playlists-name{
+    display: flex;
+    /* flex-grow: 1; */
     overflow-y: auto;
+    min-height: 300px;
 }
 
 /* SIDEBAR-BOTTOM */
 
 #sidebar-bottom{
-    z-index: 1;
-    position: absolute;
-    bottom: 0;
-    width: 218px;
+    /* z-index: 1; */
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: 250px;
+    padding: 0 1rem;
     
 }
 
