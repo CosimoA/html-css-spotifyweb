@@ -38,7 +38,7 @@ i{
 }
 
 h2{
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
     font-size: 2rem;
 }
 
@@ -202,8 +202,12 @@ main{
     overflow-y: hidden;
 }
 
-#logo img{
+#logo{
     width: 75%;
+}
+
+#logo-smal{
+    display: none;
 }
 
 #sections div, #playlist div, #playlist h3, #playlists-name li, #install, #profile{
@@ -432,7 +436,7 @@ margin-bottom: 0.5rem;
     }
 
     #nome-brano h5{
-        font-size: 1.7;
+        font-size: 1.7vw;
     }
 
     .cover-icons{
@@ -443,5 +447,57 @@ margin-bottom: 0.5rem;
 /* XS-Size */
 
 @media all and (max-width: 574px){
+
+    #sidebar{
+        width: 50px;
+        padding: 0;
+        text-align: center;
+    }
+
+    #logo, #pillola-verticale, #sections h4, #playlist, #playlists-name ul, #sidebar-bottom h4, #sidebar-bottom h3, #cover img{
+        display: none;
+    }
+
+    #logo-smal{
+        display: inline-block;
+        height: 35px;
+    }
+    
+    #install{
+        border: 0;
+    }
+
+    #sidebar img{
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #profile-img{
+        margin-right: 0;
+        margin: 0 11px;
+    }
+
+    #nome-brano h4{
+        font-size: 3vw;
+        padding-left: 0.5rem;
+    }
+
+    #nome-brano h5, #section-content a{
+        font-size: 2.5vw;
+        padding-left: 0.5rem;
+    }
+
+    .col-content h3{
+        font-size: 3.5vw;
+    }
+
+    .col-content h4{
+        font-size: 3vw;
+    }
+
+    #banner{
+        width: calc(100% - 50px);
+    }
+
     
 }
