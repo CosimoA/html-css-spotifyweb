@@ -38,8 +38,7 @@ i{
 }
 
 h2{
-    display: inline-block;
-    padding: 2rem 0;
+    padding: 1rem 0;
     font-size: 2rem;
 }
 
@@ -145,7 +144,7 @@ main{
 }
 
 .col-content{
-    margin: 0.5rem;
+    margin: 1.5rem 0.5rem;
     width: calc((100% / 6) - 1rem );
     text-align: center;
 }
@@ -177,7 +176,14 @@ main{
 /*----------IMG----------*/
 
 .circle{
-    position: relative;
+    border-radius: 50%;
+}
+
+.circle img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 50%;
 }
 
 
@@ -229,9 +235,7 @@ main{
 /* SIDEBAR-BOTTOM */
 
 #sidebar-bottom{
-    width: 250px;
-    padding: 0 1rem;
-    
+    width: 218px;
 }
 
 /* install */
@@ -299,10 +303,17 @@ main{
     justify-content: center;
 }
 
-#section-content a{
-    display: inline-block;
-    padding: 1rem 1rem 0.5rem 1rem;
+#section-content ul{
+    display: flex;
+}
 
+#section-content a{
+    font-size: 1.249vw;
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+
+#mix-ai h4{
+    margin-top: -0.5rem;
 }
 
 
@@ -372,14 +383,65 @@ margin-bottom: 0.5rem;
     RESPONSIVE
 ************************************************/
 
-/* TABLET 768px */
+/* MD-Size */
 
-@media all and (min-width: 768px){
+@media all and (max-width: 900px){
+    #section-content ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #section-content a, .col-content h3{
+        font-size: 1.4vw;
+    }
+
+    #recently{
+        flex-wrap: wrap;
+    }
+    .col-content{
+        width: calc( 25% - 1rem );
+    }
+
+    .col-content h4{
+        font-size: 1.3vw;
+    }
     
 }
 
-/* Desktop 1200px */
+/* S-Size */
 
-@media all and (min-width: 1200px){
+@media all and (max-width: 664px){
+    #section-content ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #section-content a, .col-content h3{
+        font-size: 2vw;
+    }
+
+    #recently{
+        flex-wrap: wrap;
+    }
+    .col-content{
+        width: calc( 50% - 1rem );
+    }
+
+    .col-content h4, #nome-brano h4{
+        font-size: 1.9vw;
+    }
+
+    #nome-brano h5{
+        font-size: 1.7;
+    }
+
+    .cover-icons{
+        display: block;
+    }
+}
+
+/* XS-Size */
+
+@media all and (max-width: 574px){
     
 }
