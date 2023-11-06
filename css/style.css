@@ -34,7 +34,6 @@ i{
 
 #sections img{
     height: 28px;
-    /* font-size: 28px; */
     padding-right: 0.5rem;
 }
 
@@ -187,17 +186,13 @@ main{
 ************************************************/
 
 /* SIDEBAR */
-#sidebar-container{
-    overflow-y: hidden;
-    display: flex;
-    flex-direction: column;
-}
+
 
 #sidebar{
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
     padding: 0 1rem;
     width: 250px;
-    /* position: relative; */
     overflow-y: hidden;
 }
 
@@ -227,24 +222,13 @@ main{
 }
 
 #playlists-name{
-    display: flex;
-    /* height: 100%; */
-}
-
-#playlists-name div{
     flex-grow: 1;
-
-    /* height: 100%; */
     overflow-y: auto;
-
 }
 
 /* SIDEBAR-BOTTOM */
 
 #sidebar-bottom{
-    /* z-index: 1; */
-    /* position: absolute; */
-    /* bottom: 0; */
     width: 250px;
     padding: 0 1rem;
     
