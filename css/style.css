@@ -227,10 +227,16 @@ main{
 }
 
 #playlists-name{
-    /* display: flex; */
-    /* flex-grow: 1; */
+    display: flex;
+    /* height: 100%; */
+}
+
+#playlists-name div{
+    flex-grow: 1;
+
+    /* height: 100%; */
     overflow-y: auto;
-    height: 300px;
+
 }
 
 /* SIDEBAR-BOTTOM */
