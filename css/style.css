@@ -227,10 +227,10 @@ main{
 }
 
 #playlists-name{
-    display: flex;
+    /* display: flex; */
     /* flex-grow: 1; */
     overflow-y: auto;
-    min-height: 300px;
+    height: 300px;
 }
 
 /* SIDEBAR-BOTTOM */
